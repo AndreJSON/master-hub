@@ -1,0 +1,25 @@
+{
+	"value": 20,
+	"valueCounter": 0,
+	"multiSpawnRate": 1,
+	"boss": "astervoid-boss-chaos.json",
+	"bossSpawned": false,
+	"enemies": [
+		{
+			"enemy": "astervoid-enemy-chaser-lightning.json",
+			"value": 3
+		},
+		{
+			"enemy": "astervoid-enemy-chaser.json",
+			"value": 2
+		},
+		{
+			"enemy": "astervoid-enemy-duplicator.json",
+			"value": 3
+		},
+		{
+			"enemy": "astervoid-enemy-kamikaze.json",
+			"value": 3
+		}
+	]			
+}

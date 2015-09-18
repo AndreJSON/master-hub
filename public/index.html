@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<title>André Josefsson</title>
+		<meta charset="utf-8">
+		<!-- css -->
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- imported libs -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-route.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-aria.min.js"></script> 
+    	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script> 
+    	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-material/0.10.0/angular-material.min.js"></script>
+		<!-- icons -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.5.0/angular-material-icons.min.js"></script>
+		<!-- my js -->
+		<script src="/scripts/main.js"></script>
+		<script src="/scripts/controllers/main-controller.js"></script>
+		<script src="/scripts/controllers/astervoid-controller.js"></script>
+		<script src="/scripts/controllers/catch-it-controller.js"></script>
+		<script src="/scripts/controllers/sorting-controller.js"></script>
+		<script src="/scripts/directives/astervoid-directive.js"></script>
+	</head>
+	
+	<body ng-app="masterApp" ng-controller="mainController" layout="row">
+		
+		<div flex style="max-width:40px;">
+			<md-button ng-click="toggleSideNav('open');" class="md-icon-button md-primary" aria-label="Menu">
+				<md-icon md-svg-icon="images/menu.svg"></md-icon>
+			</md-button>
+		</div>
+		
+		<div layout="row">
+			<md-sidenav layout="column" md-component-id="sideNav" class="md-sidenav-left aj-sidenav">
+				<header class="nav-header aj-nav-header">
+					<div class="aj-container">
+						<div layout="row">
+							<img src="images/angular-js.png" style="height: 35%; width: 35%;">
+							<h1 class="aj-inverted-text aj-nav-header-h1" style="font-size:68px; margin-top:8px; margin-bottom:  10px;">NDRÉ</h1>
+						</div>
+						<h1 class="aj-nav-header-h1" style="color:#D03035; margin-top:0; font-size: 43px;">{J<span class="aj-inverted-text">OSEFS</span>SON}</h1>
+					</div>
+				</header>
+				<md-content flex class="aj-sidenav-content">
+					<md-list flex layout="column" style="padding:0;">
+						<md-item ng-repeat="view in views">
+							<md-button href="#/{{view}}" class="aj-sidenav-button">
+								<h2 class="aj-inverted-text aj-sidenav-button-text">{{view}}</h2>
+							</md-button>
+						</md-item>
+					</md-list>
+				</md-content>
+			</md-sidenav>
+		</div>
+		<div flex layout="column" ng-view>
+		</div>
+	</body>
+</html>

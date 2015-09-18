@@ -1,0 +1,88 @@
+{
+    "type": 3,
+    "xPos": "undefined",
+    "yPos": "undefined",
+    "xSize": 40,
+    "ySize": "undefined",
+    "xVel": 0,
+    "yVel": 0,
+	"speed": 0.01,
+    "color": "red",
+	"maxHealth": 1,
+	"currentHealth": 1,
+    "angle": 0,
+    "spawners": [
+        {
+            "cooldown": -1,
+            "cooldownCounter": 0,
+            "spawnSize": 10,
+            "spawnAngle": 0,
+            "spawnVel": 5,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        },
+		{
+            "cooldown": -1,
+            "cooldownCounter": 0,
+            "spawnSize": 10,
+            "spawnAngle": 0.78539816339,
+            "spawnVel": 5,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        },
+		{
+            "cooldown": -1,
+            "cooldownCounter": 0,
+            "spawnSize": 10,
+            "spawnAngle": 1.570796326,
+            "spawnVel": 5,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        },
+		{
+            "cooldown": -1,
+            "cooldownCounter": 0,
+            "spawnSize": 10,
+            "spawnAngle": 2.35619449019,
+            "spawnVel": 5,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        },
+		{
+            "cooldown": -1,
+            "cooldownCounter": 0,
+            "spawnSize": 10,
+            "spawnAngle": 3.14159265,
+            "spawnVel": 5,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        },
+		{
+            "cooldown": -1,
+            "cooldownCounter": 0,
+            "spawnSize": 10,
+            "spawnAngle": 3.92699081699,
+            "spawnVel": 5,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        },
+		{
+            "cooldown": -1,
+            "cooldownCounter": 0,
+            "spawnSize": 10,
+            "spawnAngle": 4.712389,
+            "spawnVel": 5,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        },
+		{
+            "cooldown": -1,
+            "cooldownCounter": 0,
+            "spawnSize": 10,
+            "spawnAngle": 5.49778714378,
+            "spawnVel": 5,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+	"id": 2,
+	"name": "Goliath",
+	"stackable": 1,
+	"description-short": "Bigger IS better.",
+	"description-long": "Increases the size of your bullets.",
+	"bulletSize": 3
+}

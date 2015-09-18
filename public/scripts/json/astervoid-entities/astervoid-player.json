@@ -1,0 +1,41 @@
+{
+    "type": 0,
+    "xPos": 600,
+    "yPos": 400,
+    "xSize": 42,
+    "ySize": 34,
+    "xVel": 0,
+    "yVel": 0,
+	"speed": 0.15,
+    "color": "rgb(180,185,185)",
+	"maxHealth": 100,
+	"currentHealth": 100,
+	"healthRegen": 0,
+    "angle": 0,
+	"cash": 0,
+	"dropRate":1,
+	"upgrades":  {
+		"damage": 0,
+		"health": 0,
+		"healthRegen": 0,
+		"cooldown": 1,
+		"mods": 0,
+		"dropRate": 0
+	},
+	"maxMods": 1,
+	"equippedMods": [
+	],
+	"inventoryMods": [
+	],
+    "spawners": [
+        {
+            "cooldown": 60,
+            "cooldownCounter": 0,
+            "spawnSize": 4,
+            "spawnAngle": 0,
+            "spawnVel": 2.5,
+			"spawnHealth": 50,
+            "spawnSpawners": []
+        }
+    ]
+}

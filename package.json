@@ -1,0 +1,11 @@
+{
+	"name": "website3",
+	"version": "1.0.0",
+	"description": "A module creating for learning purposes.",
+	"author": "Andre Josefsson <andrejos@kth.se>",
+	"main": "server.js",
+	"dependencies": {
+		"express" : "~4.13.3",
+		"mongoose" : "~4.1.4"
+	}
+}

@@ -1,0 +1,61 @@
+{
+    "type": 3,
+    "xPos": "undefined",
+    "yPos": "undefined",
+    "xSize": 90,
+    "ySize": "undefined",
+    "xVel": 0,
+    "yVel": 0,
+	"speed": 0.005,
+    "color": "black",
+	"maxHealth": 500,
+	"currentHealth": 500,
+    "angle": 0,
+    "spawners": [
+		{
+            "cooldown": 250,
+            "cooldownCounter": 2,
+            "spawnSize": 12,
+            "spawnAngle": 0.05,
+            "spawnVel": 4,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        },
+		{
+            "cooldown": 250,
+            "cooldownCounter": 0,
+            "spawnSize": 12,
+            "spawnAngle": 0.1,
+            "spawnVel": 4,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        },
+        {
+            "cooldown": 250,
+            "cooldownCounter": 0,
+            "spawnSize": 12,
+            "spawnAngle": 0,
+            "spawnVel": 4,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        },
+		{
+            "cooldown": 250,
+            "cooldownCounter": 0,
+            "spawnSize": 12,
+            "spawnAngle": -0.1,
+            "spawnVel": 4,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        },
+		{
+            "cooldown": 250,
+            "cooldownCounter": 3,
+            "spawnSize": 12,
+            "spawnAngle": -0.05,
+            "spawnVel": 4,
+			"spawnHealth": 20,
+            "spawnSpawners": []
+        }
+    ]
+}

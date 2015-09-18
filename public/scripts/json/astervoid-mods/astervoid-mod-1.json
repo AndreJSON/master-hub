@@ -1,0 +1,18 @@
+{
+	"id": 1,
+	"name": "The right hand",
+	"stackable": 0,
+	"description-short": "Every ruler needs a right hand.",
+	"description-long": "Arms your ship with a new cannon that fires to the right with 100% of your regular cannons force.",
+	"spawners": [
+		{
+            "cooldown": 60,
+            "cooldownCounter": 0,
+            "spawnSize": 4,
+            "spawnAngle": 0,
+            "spawnVel": 2.5,
+			"spawnHealth": 50,
+            "spawnSpawners": []
+        }
+	]
+}

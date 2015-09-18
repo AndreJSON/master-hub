@@ -1,0 +1,13 @@
+{
+	"value": 10,
+	"valueCounter": 0,
+	"multiSpawnRate": 1,
+	"boss": "astervoid-boss-chaser.json",
+	"bossSpawned": false,
+	"enemies": [
+		{
+			"enemy": "astervoid-enemy-chaser-lightning.json",
+			"value": 1
+		}
+	]			
+}

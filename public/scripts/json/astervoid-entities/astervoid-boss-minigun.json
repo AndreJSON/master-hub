@@ -1,0 +1,25 @@
+{
+    "type": 3,
+    "xPos": "undefined",
+    "yPos": "undefined",
+    "xSize": 100,
+    "ySize": "undefined",
+    "xVel": 0,
+    "yVel": 0,
+	"speed": 0.004,
+    "color": "black",
+	"maxHealth": 1000,
+	"currentHealth": 1000,
+    "angle": 0,
+    "spawners": [
+        {
+            "cooldown": 10,
+            "cooldownCounter": 0,
+            "spawnSize": 11,
+            "spawnAngle": 0,
+            "spawnVel": 5,
+			"spawnHealth": 2,
+            "spawnSpawners": []
+        }
+    ]
+}

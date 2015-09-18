@@ -1,0 +1,46 @@
+{
+    "type": 3,
+    "xPos": "undefined",
+    "yPos": "undefined",
+    "xSize": 70,
+    "ySize": "undefined",
+    "xVel": 0,
+    "yVel": 0,
+	"speed": 0.005,
+    "color": "black",
+	"maxHealth": 2000,
+	"currentHealth": 2000,
+    "angle": 0,
+    "spawners": [
+        {
+            "cooldown": 200,
+            "cooldownCounter": 0,
+            "spawnSize": 5,
+            "spawnAngle": 0.01,
+            "spawnVel": 5,
+			"spawnHealth": 10,
+			"speed": 0.01,
+            "spawnSpawners": []
+        },
+		{
+            "cooldown": 200,
+            "cooldownCounter": 5,
+            "spawnSize": 5,
+            "spawnAngle": -0.01,
+            "spawnVel": 5,
+			"spawnHealth": 10,
+			"speed": 0.01,
+            "spawnSpawners": []
+        },
+		{
+            "cooldown": 200,
+            "cooldownCounter": 10,
+            "spawnSize": 5,
+            "spawnAngle": 0,
+            "spawnVel": 5,
+			"spawnHealth": 10,
+			"speed": 0.01,
+            "spawnSpawners": []
+        }
+    ]
+}

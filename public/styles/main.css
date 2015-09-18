@@ -1,0 +1,75 @@
+body {
+	background-image: -webkit-linear-gradient(270deg,rgb(226,229,229) 0%,rgb(210,215,215) 100%);
+    background-image: linear-gradient(270deg,rgb(226,229,229) 0%,rgb(210,215,215) 100%);
+}
+
+.aj-text {
+	color: rgb(37, 42, 43);
+}
+
+.aj-inverted-text {
+	color: rgb(230,233,233);
+}
+
+.aj-sidenav {
+	 background: rgb(37, 42, 43);
+	 -webkit-box-shadow: 0px 0px 27px 1px rgba(65,70,71,1);
+	 -moz-box-shadow: 0px 0px 27px 1px rgba(65,70,71,1);
+	 box-shadow: 0px 0px 27px 1px rgba(65,70,71,1);
+}
+
+.aj-sidenav-content {
+	background: rgb(65, 70, 71);
+	border-top: 2px solid rgb(70,75,76);
+}
+
+.aj-nav-header {
+	border-bottom: 1px solid rgb(35, 40, 41);
+	max-height: 200px;
+}
+
+.aj-sidenav-button {
+	width: 100%;
+	margin:0;
+	border-bottom: 2px solid rgb(69, 74, 75);
+}
+
+.aj-sidenav-button-text {
+	float: left;
+	padding-left: 20px;
+}
+
+.aj-astervoid-button {
+	background-image:  linear-gradient(270deg,#F5F5F5 0%,#EEEEEE 100%);
+}
+
+.aj-container {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+}
+
+.aj-container-sides {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.aj-toolbar {
+	/*background-image: -webkit-linear-gradient(270deg,rgb(205,210,215) 0%,rgb(200,205,205) 100%);
+    background-image: linear-gradient(270deg,rgb(205,210,215) 0%,rgb(200,205,205) 100%);*/
+	background: rgb(65, 70, 71);
+}
+
+.aj-toolbar-icon {
+	fill: rgb(37, 42, 43);
+}
+
+.aj-text-container {
+	max-width: 700px;
+}
+
+.aj-no-space {
+	margin: 0;
+	padding: 0;
+	border: none;
+}

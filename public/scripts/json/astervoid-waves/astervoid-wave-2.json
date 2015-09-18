@@ -1,0 +1,17 @@
+{
+	"value": 10,
+	"valueCounter": 0,
+	"multiSpawnRate": 1,
+	"boss": "astervoid-boss-shotgun.json",
+	"bossSpawned": false,
+	"enemies": [
+		{
+			"enemy": "astervoid-enemy-kamikaze.json",
+			"value": 2
+		},
+		{
+			"enemy": "astervoid-enemy-chaser.json",
+			"value": 1
+		}
+	]			
+}

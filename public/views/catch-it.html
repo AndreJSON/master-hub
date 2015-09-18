@@ -1,0 +1,158 @@
+<div class="aj-container-sides" flex layout="column" style="max-width:1400px;">
+	<md-tabs flex md-border-bottom>
+		<md-tab label="To school">
+			<md-grid-list md-cols-sm="1" md-cols-gt-sm="2" md-cols-gt-lg="4" md-row-height="62px" md-gutter="8px">
+				<md-grid-tile md-rowspan="1" md-colspan-sm="1" md-colspan-gt-sm="2" md-colspan-gt-lg="4">
+					<md-button ng-click="updateToSchool();" class="md-raised md-primary">Updatera</md-button>
+				</md-grid-tile>
+				<md-grid-tile md-rowspan="8" md-colspan="1" md-colspan-sm="1">
+					<md-grid-tile-header>
+						<h3>Sandviksskolan > Barkarby</h3>
+					</md-grid-tile-header>
+					<md-list>
+						<md-list-item ng-repeat="trip in toSchool[0]" layout="column">
+							<h2>
+								{{trip.LegList.Leg.dir}}<br>
+								{{trip.LegList.Leg.Origin.time}} > {{trip.LegList.Leg.Destination.time}}
+							</h2>
+						</md-list-item>
+					</md-list>
+					<md-grid-tile-footer>
+					</md-grid-tile-footer>
+				</md-grid-tile>
+				<md-grid-tile md-rowspan="8" md-colspan="1" md-colspan-sm="1">
+					<md-grid-tile-header>
+						<h3>Sandviksskolan > Jakobsberg</h3>
+					</md-grid-tile-header>
+					<md-list>
+						<md-list-item ng-repeat="trip in toSchool[1]" layout="column">
+							<h2>
+								{{trip.LegList.Leg.dir}}<br>
+								{{trip.LegList.Leg.Origin.time}} > {{trip.LegList.Leg.Destination.time}}
+							</h2>
+						</md-list-item>
+					</md-list>
+					<md-grid-tile-footer>
+					</md-grid-tile-footer>
+				</md-grid-tile>
+				<md-grid-tile md-rowspan="8" md-colspan="1" md-colspan-sm="1">
+					<md-grid-tile-header>
+						<h3>Barkarby > Centralen</h3>
+					</md-grid-tile-header>
+					<md-list>
+						<md-list-item ng-repeat="trip in toSchool[2]" layout="column">
+							<h2>
+								{{trip.LegList.Leg.dir}}<br>
+								{{trip.LegList.Leg.Origin.time}} > {{trip.LegList.Leg.Destination.time}}
+							</h2>
+						</md-list-item>
+					</md-list>
+					<md-grid-tile-footer>
+					</md-grid-tile-footer>
+				</md-grid-tile>
+				<md-grid-tile md-rowspan="8" md-colspan="1" md-colspan-sm="1">
+					<md-grid-tile-header>
+						<h3>Centralen > Teknis</h3>
+					</md-grid-tile-header>
+					<md-list>
+						<md-list-item ng-repeat="trip in toSchool[3]" layout="column">
+							<h2>
+								{{trip.LegList.Leg.dir}}<br>
+								{{trip.LegList.Leg.Origin.time}} > {{trip.LegList.Leg.Destination.time}}
+							</h2>
+						</md-list-item>
+					</md-list>
+					<md-grid-tile-footer>
+					</md-grid-tile-footer>
+				</md-grid-tile>
+			</md-grid-list>
+		</md-tab>
+		<md-tab label="From school">
+			<md-grid-list md-cols-sm="1" md-cols-gt-sm="2" md-cols-gt-lg="4" md-row-height="62px" md-gutter="8px">
+				<md-grid-tile md-rowspan="1" md-colspan-sm="1" md-colspan-gt-sm="2" md-colspan-gt-lg="4">
+					<md-button ng-click="updateFromSchool();" class="md-raised md-primary">Updatera</md-button>
+				</md-grid-tile>
+				<md-grid-tile md-rowspan="8" md-colspan="1" md-colspan-sm="1">
+					<md-grid-tile-header>
+						<h3>Teknis > Centralen</h3>
+					</md-grid-tile-header>
+					<md-list>
+						<md-list-item ng-repeat="trip in fromSchool[0]" layout="column">
+							<h2>
+								{{trip.LegList.Leg.dir}}<br>
+								{{trip.LegList.Leg.Origin.time}} > {{trip.LegList.Leg.Destination.time}}
+							</h2>
+						</md-list-item>
+					</md-list>
+					<md-grid-tile-footer>
+					</md-grid-tile-footer>
+				</md-grid-tile>
+				<md-grid-tile md-rowspan="8" md-colspan="1" md-colspan-sm="1">
+					<md-grid-tile-header>
+						<h3>Centralen > Jakobsberg</h3>
+					</md-grid-tile-header>
+					<md-list>
+						<md-list-item ng-repeat="trip in fromSchool[1]" layout="column">
+							<h2>
+								{{trip.LegList.Leg.dir}}<br>
+								{{trip.LegList.Leg.Origin.time}} > {{trip.LegList.Leg.Destination.time}}
+							</h2>
+						</md-list-item>
+					</md-list>
+					<md-grid-tile-footer>
+					</md-grid-tile-footer>
+				</md-grid-tile>
+				<md-grid-tile md-rowspan="8" md-colspan="1" md-colspan-sm="1">
+					<md-grid-tile-header>
+						<h3>Barkarby > Sandviksskolan</h3>
+					</md-grid-tile-header>
+					<md-list>
+						<md-list-item ng-repeat="trip in fromSchool[2]" layout="column">
+							<h2>
+								Buss {{trip.LegList.Leg.line}}<br>
+								{{trip.LegList.Leg.Origin.time}} > {{trip.LegList.Leg.Destination.time}}
+							</h2>
+						</md-list-item>
+					</md-list>
+					<md-grid-tile-footer>
+					</md-grid-tile-footer>
+				</md-grid-tile>
+				<md-grid-tile md-rowspan="8" md-colspan="1" md-colspan-sm="1">
+					<md-grid-tile-header>
+						<h3>Jakobsberg > Sandviksskolan</h3>
+					</md-grid-tile-header>
+					<md-list>
+						<md-list-item ng-repeat="trip in fromSchool[3]" layout="column">
+							<h2>
+								Buss {{trip.LegList.Leg.line}}<br>
+								{{trip.LegList.Leg.Origin.time}} > {{trip.LegList.Leg.Destination.time}}
+							</h2>
+						</md-list-item>
+					</md-list>
+					<md-grid-tile-footer>
+					</md-grid-tile-footer>
+				</md-grid-tile>
+			</md-grid-list>
+		</md-tab>
+		<md-tab label="Störningar">
+			<md-grid-list md-cols="1" md-cols-gt-lg="2" md-row-height="62px" md-gutter="8px">
+				<md-grid-tile md-rowspan-sm="2" md-rowspan-gt-sm="1" md-colspan="1" md-colspan-gt-lg="2">
+					<md-button ng-click="updateDeviations();" class="md-raised md-primary">Updatera</md-button>
+				</md-grid-tile>
+				<md-grid-tile md-rowspan="3" md-colspan="1" ng-repeat="dev in deviations">
+					<div layout="column">
+					<h3>{{dev.Header}}</h3>
+					<p>{{dev.Details}}</p>
+					<md-divider></md-divider>
+						</div>
+				</md-grid-tile>
+			</md-grid-list>
+		</md-tab>
+		<md-tab label="About">
+			<div class="aj-text-container">
+				<h2>Hello there!</h2>
+				<p>This application has mainly been written for me to use while travelling to and from my school. Therefore it serves little purpose for anyone else who does not happen to use the very same route. If you think this application seems neat and would like to have something similar I would be more than happy to help you. Just send an email to me and I'll see if I can't add your route to a private part of the web page.</p>
+			</div>
+		</md-tab>
+	</md-tabs>
+</div>

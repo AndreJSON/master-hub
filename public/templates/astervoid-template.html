@@ -1,0 +1,11 @@
+<canvas width="{{gameWidth}}" height="{{gameHeight}}" style="margin-top:10px;" tabindex="0" ng-keydown="keyDown($event)" ng-keyup="keyUp($event)" id="gameCanvas"></canvas>
+
+<!-- I had to use ng-mouseup instead of ng-click because the button otherwise triggered on clicking enter and spacebar.-->
+<md-button ng-mouseup="startGame();" class="md-raised aj-astervoid-button" style="z-index: {{inGame? -1:0}}; position:absolute; left:530px; top:400px;" ng-keydown="keyDown($event)" ng-keyup="keyUp($event)">Play</md-button>
+
+<md-button ng-click="buyUpgrade('health');" class="md-raised aj-astervoid-button" style="z-index: {{inGame? -1:0}}; position:absolute; left:1080px; top:68px;">Upgrade</md-button>
+<md-button ng-click="buyUpgrade('healthRegen');" class="md-raised aj-astervoid-button" style="z-index: {{inGame? -1:0}}; position:absolute; left:1080px; top:131px;">Upgrade</md-button>
+<md-button ng-click="buyUpgrade('cooldown');" class="md-raised aj-astervoid-button" style="z-index: {{inGame? -1:0}}; position:absolute; left:1080px; top:194px;">Upgrade</md-button>
+<md-button ng-click="buyUpgrade('damage');" class="md-raised aj-astervoid-button" style="z-index: {{inGame? -1:0}}; position:absolute; left:1080px; top:258px;">Upgrade</md-button>
+<md-button ng-click="buyUpgrade('mods');" class="md-raised aj-astervoid-button" style="z-index: {{inGame? -1:0}}; position:absolute; left:1080px; top:321px;">Upgrade</md-button>
+<md-button ng-click="buyUpgrade('dropRate');" class="md-raised aj-astervoid-button" style="z-index: {{inGame? -1:0}}; position:absolute; left:1080px; top:384px;">Upgrade</md-button>

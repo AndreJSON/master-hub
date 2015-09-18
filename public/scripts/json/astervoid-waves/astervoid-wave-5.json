@@ -1,0 +1,13 @@
+{
+	"value": 5,
+	"valueCounter": 0,
+	"multiSpawnRate": 100,
+	"boss": "astervoid-boss-pulsor.json",
+	"bossSpawned": false,
+	"enemies": [
+		{
+			"enemy": "astervoid-enemy-kamikaze.json",
+			"value": 1
+		}
+	]			
+}
