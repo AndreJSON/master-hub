@@ -1,7 +1,7 @@
 {
-	"name": "website3",
+	"name": "master-hub",
 	"version": "1.0.0",
-	"description": "A module creating for learning purposes.",
+	"description": "A module created to act as my website.",
 	"author": "Andre Josefsson <andrejos@kth.se>",
 	"main": "server.js",
 	"dependencies": {

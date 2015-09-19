@@ -6,11 +6,10 @@ masterApp.directive('sorting', function () {
 		restrict: 'E',
 		templateUrl: '/templates/sorting-template.html',
 		scope: {
-			gameWidth: '=',
-			gameHeight: '='
+			boxWidth: '=',
+			boxHeight: '='
 		},
 		link: function (scope, element) {
-			scope.canvas = element.find('canvas')[0].getContext('2d');
 		},
 		controller: 'sortingController'
 	};
