@@ -1,3 +1,28 @@
-<div class="aj-container">
-	<h2>There is currently no content to be shown here!</h2>
+<div layout="row">	
+	<md-input-container>
+		<label>Which algorithm?</label>
+		<md-select ng-model="selectedAlgorithm" aria-label="algorithSelect">
+			<md-option ng-repeat="algorithm in algorithms" value="{{algorithm}}">{{algorithm}}</md-option>
+		</md-select>
+	</md-input-container>
+	<md-input-container>
+		<label>How many elements?</label>
+		<md-select ng-model="selectedAlgorithm" aria-label="algorithSelect">
+			<md-option ng-repeat="algorithm in algorithms" value="{{algorithm}}">{{algorithm}}</md-option>
+		</md-select>
+	</md-input-container>
+	<md-input-container>
+		<label>Actions per second?</label>
+		<md-select ng-model="selectedAlgorithm" aria-label="algorithSelect">
+			<md-option ng-repeat="algorithm in algorithms" value="{{algorithm}}">{{algorithm}}</md-option>
+		</md-select>
+	</md-input-container>
+	<md-input-container>
+		<label>How should the elements be generated?</label>
+		<md-select ng-model="selectedAlgorithm" aria-label="algorithSelect">
+			<md-option ng-repeat="algorithm in algorithms" value="{{algorithm}}">{{algorithm}}</md-option>
+		</md-select>
+	</md-input-container>
+	<md-button class="md-raised md-primary">Generate</md-button>
 </div>
+<canvas></canvas>
